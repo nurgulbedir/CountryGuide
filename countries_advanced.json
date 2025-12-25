@@ -1,0 +1,232 @@
+[
+  {
+    "name": {
+      "common": "Norway",
+      "official": "Kingdom of Norway"
+    },
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "capital": [
+      "Oslo"
+    ],
+    "climate": "cold",
+    "education_index": 0.93,
+    "crime_rate": "low",
+    "wealth_index": 0.91,
+    "happiness_index": 7.6,
+    "political_stability_index": 0.94,
+    "healthcare_quality_index": 0.92,
+    "life_expectancy": 83.1,
+    "internet_penetration": 98.5,
+    "gdp_per_capita": 89000,
+    "population": 5.4,
+    "description": "Highly developed, very safe and cold climate with excellent education opportunities."
+  },
+  {
+    "name": {
+      "common": "Canada",
+      "official": "Canada"
+    },
+    "region": "Americas",
+    "subregion": "Northern America",
+    "capital": [
+      "Ottawa"
+    ],
+    "climate": "cold",
+    "education_index": 0.9,
+    "crime_rate": "medium",
+    "wealth_index": 0.87,
+    "happiness_index": 7.2,
+    "political_stability_index": 0.91,
+    "healthcare_quality_index": 0.89,
+    "life_expectancy": 82.2,
+    "internet_penetration": 96.8,
+    "gdp_per_capita": 52000,
+    "population": 38.3,
+    "description": "Developed country with cold winters, good education, and moderate safety."
+  },
+  {
+    "name": {
+      "common": "Japan",
+      "official": "Japan"
+    },
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": [
+      "Tokyo"
+    ],
+    "climate": "temperate",
+    "education_index": 0.95,
+    "crime_rate": "very low",
+    "wealth_index": 0.89,
+    "happiness_index": 6.2,
+    "political_stability_index": 0.89,
+    "healthcare_quality_index": 0.93,
+    "life_expectancy": 84.6,
+    "internet_penetration": 97.5,
+    "gdp_per_capita": 43000,
+    "population": 125.1,
+    "description": "Safe, modern, and technologically advanced country with moderate climate."
+  },
+  {
+    "name": {
+      "common": "Australia",
+      "official": "Commonwealth of Australia"
+    },
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "capital": [
+      "Canberra"
+    ],
+    "climate": "warm",
+    "education_index": 0.92,
+    "crime_rate": "low",
+    "wealth_index": 0.88,
+    "happiness_index": 7.5,
+    "political_stability_index": 0.93,
+    "healthcare_quality_index": 0.91,
+    "life_expectancy": 83.4,
+    "internet_penetration": 97.0,
+    "gdp_per_capita": 67000,
+    "population": 26.2,
+    "description": "Warm, developed and peaceful country with high education and wealth."
+  },
+  {
+    "name": {
+      "common": "Sweden",
+      "official": "Kingdom of Sweden"
+    },
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "capital": [
+      "Stockholm"
+    ],
+    "climate": "cold",
+    "education_index": 0.94,
+    "crime_rate": "low",
+    "wealth_index": 0.9,
+    "happiness_index": 7.4,
+    "political_stability_index": 0.92,
+    "healthcare_quality_index": 0.9,
+    "life_expectancy": 82.8,
+    "internet_penetration": 98.0,
+    "gdp_per_capita": 64000,
+    "population": 10.5,
+    "description": "Highly developed Scandinavian country known for safety, education, and welfare."
+  },
+  {
+    "name": {
+      "common": "Turkey",
+      "official": "Republic of Turkey"
+    },
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "capital": [
+      "Ankara"
+    ],
+    "climate": "warm",
+    "education_index": 0.71,
+    "crime_rate": "medium",
+    "wealth_index": 0.68,
+    "happiness_index": 5.1,
+    "political_stability_index": 0.58,
+    "healthcare_quality_index": 0.73,
+    "life_expectancy": 77.7,
+    "internet_penetration": 86.0,
+    "gdp_per_capita": 13000,
+    "population": 85.4,
+    "description": "Warm climate, developing economy with moderate education and safety levels."
+  },
+  {
+    "name": {
+      "common": "Brazil",
+      "official": "Federative Republic of Brazil"
+    },
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": [
+      "Brasília"
+    ],
+    "climate": "hot",
+    "education_index": 0.65,
+    "crime_rate": "high",
+    "wealth_index": 0.6,
+    "happiness_index": 6.0,
+    "political_stability_index": 0.55,
+    "healthcare_quality_index": 0.7,
+    "life_expectancy": 75.5,
+    "internet_penetration": 84.0,
+    "gdp_per_capita": 11500,
+    "population": 214.3,
+    "description": "Hot and vibrant country with economic potential but higher crime rates."
+  },
+  {
+    "name": {
+      "common": "Germany",
+      "official": "Federal Republic of Germany"
+    },
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "capital": [
+      "Berlin"
+    ],
+    "climate": "temperate",
+    "education_index": 0.94,
+    "crime_rate": "low",
+    "wealth_index": 0.89,
+    "happiness_index": 7.1,
+    "political_stability_index": 0.9,
+    "healthcare_quality_index": 0.92,
+    "life_expectancy": 81.2,
+    "internet_penetration": 95.2,
+    "gdp_per_capita": 56000,
+    "population": 84.5,
+    "description": "Highly developed and safe European nation with strong economy and education."
+  },
+  {
+    "name": {
+      "common": "United States",
+      "official": "United States of America"
+    },
+    "region": "Americas",
+    "subregion": "Northern America",
+    "capital": [
+      "Washington D.C."
+    ],
+    "climate": "varied",
+    "education_index": 0.88,
+    "crime_rate": "medium",
+    "wealth_index": 0.9,
+    "happiness_index": 6.9,
+    "political_stability_index": 0.82,
+    "healthcare_quality_index": 0.85,
+    "life_expectancy": 78.9,
+    "internet_penetration": 92.0,
+    "gdp_per_capita": 78000,
+    "population": 333.0,
+    "description": "Large developed nation with diverse climates, strong economy and moderate safety."
+  },
+  {
+    "name": {
+      "common": "Switzerland",
+      "official": "Swiss Confederation"
+    },
+    "region": "Europe",
+    "subregion": "Central Europe",
+    "capital": [
+      "Bern"
+    ],
+    "climate": "cold",
+    "education_index": 0.93,
+    "crime_rate": "very low",
+    "wealth_index": 0.94,
+    "happiness_index": 7.8,
+    "political_stability_index": 0.96,
+    "healthcare_quality_index": 0.95,
+    "life_expectancy": 84.2,
+    "internet_penetration": 98.7,
+    "gdp_per_capita": 94000,
+    "population": 8.8,
+    "description": "Safe, wealthy, and educated country with cool climate and high living standards."
+  }
+]
