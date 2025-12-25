@@ -1,146 +1,58 @@
-# CountryGuide: AI-Based Country Recommendation System
+## CountryGuide — Country Recommendation System
 
-A modern, AI-powered country recommendation system that helps users find their ideal country based on natural language preferences using machine learning techniques.
+CountryGuide is a country recommendation system designed to help users identify countries that best match their lifestyle preferences. Instead of relying on subjective opinions or fragmented online information, the system analyzes user descriptions and compares them with structured socio-economic data to generate meaningful recommendations.
 
-## 🚀 Features
+The idea for this project came to me while I was planning a trip. Even with a destination already in mind, the sea of conflicting online reviews and opinions made the final decision feel unnecessarily complex. I built this project to cut through that noise, providing a more objective and data-driven way to validate travel choices and support better decision-making.
 
-- **AI-Powered Recommendations**: Uses KMeans clustering and cosine similarity to provide personalized country suggestions
-- **Natural Language Processing**: Understands user preferences from text input
-- **Modern UI**: Beautiful glassmorphism design with dark mode
-- **Real-time Analysis**: Fast API responses with visual criteria analysis
-- **Cluster-based Filtering**: Smart filtering based on best match clusters
+### Overview
 
-## 🛠️ Technologies
+The system simplifies country comparison by translating natural language user input into measurable criteria such as safety, education, economic strength, and overall well-being. Countries are then evaluated and ranked using multi-dimensional similarity analysis rather than manual comparison of individual indices.
 
-### Backend
-- Python 3.x
-- FastAPI
-- Pandas, NumPy
-- scikit-learn (KMeans, Cosine Similarity)
+### Technical Stack
 
-### Frontend
-- React 18
-- Tailwind CSS
-- Framer Motion
-- Recharts
+* **Backend:** Python (FastAPI)
+* **Data Processing & Modeling:** Pandas, NumPy, scikit-learn
+* **Methods:** KMeans clustering, Cosine Similarity
+* **Frontend:** React, Tailwind CSS, Framer Motion
+* **Data Source:** Custom dataset derived from global indicators (happiness, wealth, stability, education)
 
-## 📦 Installation
+### How the Recommendation Engine Works
 
-### Backend Setup
+1. **Data Scaling:** Country metrics are normalized to a 0–1 range using MinMaxScaler.
+2. **Clustering:** Countries are grouped into four clusters based on shared characteristics.
+3. **Similarity Analysis:** User preferences are compared with countries within the most relevant cluster using cosine similarity.
+4. **Ranking:** The top three countries are returned with compatibility scores.
 
-```bash
-# Install Python dependencies
-pip install -r requirements.txt
+### API & Usage
 
-# Run the API server
-python main.py
-```
+The system exposes a RESTful endpoint for real-time recommendations.
 
-Backend will run on `http://localhost:8000`
+**Endpoint:**
+`POST /api/v1/recommend`
 
-### Frontend Setup
+**Request example:**
 
-```bash
-# Install Node dependencies
-npm install
-
-# Run development server
-npm run dev
-```
-
-Frontend will run on `http://localhost:3000`
-
-## 📖 Usage
-
-1. Start both backend and frontend servers
-2. Open `http://localhost:3000` in your browser
-3. Enter your country preferences (e.g., "I want a safe country with high economic level and good education")
-4. Get personalized country recommendations!
-
-## 🏗️ Project Structure
-
-```
-ulke_oneri/
-├── backend/
-│   ├── recommender.py          # Main recommendation engine
-│   ├── main.py                 # FastAPI endpoints
-│   ├── countries_advanced.json # Country dataset
-│   └── requirements.txt        # Python dependencies
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── CountryRecommendation.jsx
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   ├── public/
-│   │   └── profile-photo.jpg
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.js
-└── PROJE_RAPORU.md
-```
-
-## 🔬 How It Works
-
-1. **Data Loading**: Country data is loaded from JSON and converted to DataFrame
-2. **Feature Extraction**: Numerical metrics are automatically selected
-3. **Normalization**: All metrics are normalized to 0-1 range using Min-Max Scaler
-4. **Clustering**: Countries are grouped into 4 clusters using KMeans
-5. **Query Processing**: User text is converted to a criteria vector using keyword-based rules
-6. **Similarity Calculation**: Cosine similarity is computed between query and all countries
-7. **Filtering**: Recommendations are selected from the best match's cluster
-8. **Results**: Top 3 countries with scores are returned
-
-## 📝 API Documentation
-
-### POST `/api/v1/recommend`
-
-**Request:**
 ```json
 {
-  "text": "I want a safe country with good education"
+  "text": "I want a safe country with high education and a strong economy"
 }
 ```
 
-**Response:**
-```json
-{
-  "criteria": {
-    "education_index": 0.95,
-    "wealth_index": 0.87,
-    ...
-  },
-  "best_match": {
-    "name": "Switzerland",
-    "cluster": 1
-  },
-  "recommendations": [
-    {
-      "name": "Switzerland",
-      "score": 98.5,
-      "region": "Europe",
-      ...
-    }
-  ]
-}
-```
+**Response includes:**
 
-API documentation available at `http://localhost:8000/docs`
+* Parsed preference criteria
+* Best matching country
+* Top three recommendations with scores
 
-## 👤 Author
+### Future Improvements
+
+* Incorporating cost of living indicators
+* Improving natural language understanding for more complex user inputs
+
+---
 
 **Nurgül Bedir**
-- Computer Engineering Student
-- Organizer at GDG Elazığ
-- [Linktree](https://linktr.ee/nurgulbedir)
+Computer Engineering Student
 
-## 📄 License
-
-This project is developed as part of the Computer Engineering Design Course at Fırat University.
-
-## 🙏 Acknowledgments
-
-- Fırat University Engineering Faculty
-- GDG Elazığ Community
+---
 
