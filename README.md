@@ -52,7 +52,7 @@ The system exposes a RESTful endpoint for real-time recommendations.
 ---
 
 **Nurgül Bedir**
-Computer Engineering Student | BMÜ-401 Computer Engineering Design Project
+Computer Engineering Student
 
 ---
 
